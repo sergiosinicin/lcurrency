@@ -1,0 +1,15 @@
+Model
+php artisan make:model Models/Currency -m
+php artisan make:model Models/ExchangeRates -m
+
+php artisan migrate
+
+Controller
+php artisan make:controller CurrencyController --resource
+php artisan route:list
+
+/** BOOTSTRAP **/
+composer require laravel/ui
+php artisan ui bootstrap --auth
+npm install
+npm run dev
