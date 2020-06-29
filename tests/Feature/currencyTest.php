@@ -16,7 +16,7 @@ class currencyTest extends TestCase
      */
     public function testCreate()
     {
-        $response = $this->post('/currencies/store',[
+        $response = $this->post('/currencies',[
             'name' => $this->faker()->currencyCode,
             'code' => $this->faker()->currencyCode,
             'symbol' => $this->faker()->text(5),

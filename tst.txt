@@ -1,7 +1,5 @@
 Model
 php artisan make:model Models/Currency -m
-php artisan make:model Models/ExchangeRates -m
-
 php artisan migrate
 
 Controller
